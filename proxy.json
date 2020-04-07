@@ -1,5 +1,5 @@
 {
-    "proxy_url": "socks5 OR socks5h://URL_OF_THE_PROXY_SERVER:PROXY_PORT",
+    "proxy_url": "socks5://proxy.nkhost.ru:1080",
     "urllib3_proxy_kwargs": {
         "username": "anon",
         "password": "lockyourself"
