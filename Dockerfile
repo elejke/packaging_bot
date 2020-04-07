@@ -1,4 +1,4 @@
-FROM elejke/python:3.5-alpine-zbar
+FROM elejke/python:3.8-alpine-zbar
 
 WORKDIR /app
 
