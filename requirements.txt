@@ -1,1 +1,1 @@
-six
+python-telegram-bot>=5,<6
