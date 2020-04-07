@@ -49,8 +49,8 @@ def inlinequery(bot, update):
                     id=uuid4(),
                     title=result_['name'],
                     thumb_url=result_['img_url'],
-                    input_message_content=InputTextMessageContent('%s %s'%(bar_code, result_['name'])))
-                    # input_message_content=InputTextMessageContent(result_['name']))
+                    input_message_content=InputTextMessageContent('%s %s' % (bar_code, result_['name'])))
+                # input_message_content=InputTextMessageContent(result_['name']))
                 # result_['name']))
 
                 # result_['name'])
@@ -72,8 +72,8 @@ def inlinequery(bot, update):
                     title=result_['name'],
                     description=result_['description'],
                     thumb_url=result_['img_url'],
-                    input_message_content=InputTextMessageContent('%s. %s'%(result_['id'],
-                                                                            result_['name'])))
+                    input_message_content=InputTextMessageContent('%s. %s' % (result_['id'],
+                                                                              result_['name'])))
                 # result_['name']))
 
                 # result_['name'])

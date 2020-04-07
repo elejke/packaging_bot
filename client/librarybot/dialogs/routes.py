@@ -17,8 +17,8 @@ def crossroad(bot, update):
     agent, chat, botuser = get_update_context(update, state=Chat.MAINMENU)
 
     text = update.message.text
-    logger.debug(config().get_handlers())
-    for roadkey, (road_state, road) in config().get_handlers().items():
+    logger.debug(Config().get_handlers())
+    for roadkey, (road_state, road) in Config().get_handlers().items():
         if roadkey == text:
             chat.state = road_state
             chat.save()
@@ -27,7 +27,7 @@ def crossroad(bot, update):
     return ConversationHandler.END
 
 
-class config:
+class Config:
     state_map_list = [
         addproduct_state_map
     ]

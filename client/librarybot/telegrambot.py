@@ -9,7 +9,7 @@ from django_telegrambot.apps import DjangoTelegramBot
 
 from .models import Chat, BotUser
 
-from .dialogs.routes import config as route_config
+from .dialogs.routes import Config as route_config
 from .dialogs.messages import msg
 from .dialogs.inline_bot import inlinequery
 
