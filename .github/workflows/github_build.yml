@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - code_transfer
 jobs:
   build:
     runs-on: ubuntu-latest
