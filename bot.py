@@ -48,7 +48,7 @@ def echo(bot):
 
         if update.message:  # your bot can receive updates without messages
             # Reply to the message
-            update.message.reply_text("New version 1.3 test, Hello world " + update.message.text)
+            update.message.reply_text("New version 1.4 test, Hello world " + update.message.text)
 
 
 if __name__ == '__main__':
