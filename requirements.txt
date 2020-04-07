@@ -3,5 +3,4 @@ python-telegram-bot
 Pillow
 pre-commit
 django-mysql
-opencv-python
 pyzbar

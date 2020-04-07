@@ -1,4 +1,5 @@
-FROM python:3.5-alpine
+# FROM python:3.5-alpine
+FROM thatsarr/alpine_armv7l-opencv
 
 WORKDIR /app
 
