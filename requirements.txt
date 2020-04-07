@@ -1,5 +1,5 @@
 django
-python-telegram-bot
+python-telegram-bot[socks]
 Pillow
 pre-commit
 django-mysql
