@@ -1,0 +1,9 @@
+ngrok.exe http http://localhost:8000
+windscribe
+
+python manage.py runserver
+
+python manage.py makemigrations librarybot
+python manage.py migrate librarybot
+
+119602651	@TikhonovaPolly	Polly Tikhonova
