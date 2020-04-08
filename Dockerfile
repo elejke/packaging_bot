@@ -21,4 +21,7 @@ RUN apk add libzbar
 
 COPY . /app/
 
-CMD python bot.py
+RUN nohup python client/manage.py runserver
+
+CMD python client/manage.py botpolling --username=open_recycle_team_bot
+#CMD python bot.py
