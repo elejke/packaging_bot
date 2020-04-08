@@ -14,7 +14,7 @@ ENV ZBAR_PATH=/usr/lib/libzbar.so.0
 
 RUN pip install -r requirements.txt
 
-RUN pip uninstall pyzbar
+RUN pip uninstall pyzbar --yes
 RUN pip install git+git://github.com/NaturalHistoryMuseum/pyzbar.git@feature/40-path-to-zbar
 
 COPY . /app/
