@@ -3,7 +3,6 @@ python-telegram-bot[socks]
 Pillow
 pre-commit
 django-mysql
-pyzbar
 requests
 bs4
 lxml
