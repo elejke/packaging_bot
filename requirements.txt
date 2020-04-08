@@ -1,6 +1,9 @@
+pip==19.3.1
 django
 python-telegram-bot[socks]
 Pillow
 pre-commit
 django-mysql
-pyzbar
+requests
+bs4
+lxml
