@@ -17,6 +17,8 @@ RUN pip install -r requirements.txt
 RUN pip uninstall pyzbar --yes
 RUN pip install git+git://github.com/NaturalHistoryMuseum/pyzbar.git@feature/40-path-to-zbar
 
+RUN apk add libzbar
+
 COPY . /app/
 
 CMD python bot.py
