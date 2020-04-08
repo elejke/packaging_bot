@@ -4,3 +4,6 @@ Pillow
 pre-commit
 django-mysql
 pyzbar
+requests
+bs4
+lxml

@@ -8,6 +8,8 @@ ENV LIBRARY_PATH=/lib:/usr/lib
 
 COPY requirements.txt /app/
 
+RUN apk add libxml2-dev libxslt-dev
+
 RUN pip install -r requirements.txt
 
 COPY . /app/

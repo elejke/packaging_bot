@@ -17,11 +17,13 @@ from .db_requests import *
 # import numpy as np
 
 from pyzbar import pyzbar
-import cv2
+from PIL import Image
+# import cv2
 
 
 def decode_photo(path_to_photo):
-    image = cv2.imread(path_to_photo)
+    # image = cv2.imread(path_to_photo)
+    image = Image.open(path_to_photo)
     barcodes = pyzbar.decode(image)
     barcodeData = None
     for barcode in barcodes:
