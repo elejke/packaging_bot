@@ -1,5 +1,7 @@
 # packaging_bot
 
+[![CodeFactor](https://www.codefactor.io/repository/github/elejke/packaging_bot/badge?s=13bc3359e8141b92aadc60031fbbbc433c4a81ab)](https://www.codefactor.io/repository/github/elejke/packaging_bot)
+
 ## Cоздание приложения для сбора информации о трудноперерабатываемой упаковке
 
 Приложение использует микросервисную архитектуру и состоит из модулей.
