@@ -335,14 +335,14 @@ def add_new_product_string_generation(chat, user_email=None, manufacturer_phone=
     manufacturer_name = meta_data['manufacturer_name']
     manufacturer_email = meta_data['manufacturer_email']
     manufacturer_address = meta_data['manufacturer_address']
-    manufacturer_phone = meta_data['manufacturer_phone'] if manufacturer_phone == None else manufacturer_phone
+    manufacturer_phone = meta_data['manufacturer_phone'] if manufacturer_phone is None else manufacturer_phone
     manufacturer_data = ''
     for part_data in [manufacturer_email, manufacturer_address, manufacturer_phone]:
         if part_data != '':
             manufacturer_data = manufacturer_data + part_data + ', '
     manufacturer_data = manufacturer_data if manufacturer_data == '' else manufacturer_data[:-2]
     user_name = meta_data['user_name']
-    if user_email == None:
+    if user_email is None:
         user_email = meta_data['user_email']
     user_data = ', '.join([user_name, user_email])
     base_string = '''Продукт: %s
