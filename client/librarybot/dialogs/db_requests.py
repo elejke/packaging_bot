@@ -62,15 +62,18 @@ def api_request(request):
 
     item_list_parsed = []
 
-    for item_ in item_list:
-        item_list_parsed.append(
-            {
-                "utkonos_result_id": item_['src'].split("/")[-1].split(".")[0],
-                "img_url": item_['src'],
-                "name": item_['alt'],
-                "art": item_.parent['href'].replace('/item/', '').split('/')[0]
-            }
-        )
+    for item_ in item_list[:10]:
+        try:
+            item_list_parsed.append(
+                {
+                    "utkonos_result_id": item_['src'].split("/")[-1].split(".")[0],
+                    "img_url": item_['src'],
+                    "name": item_['alt'],
+                    "art": item_.parent['href'].replace('/item/', '').split('/')[0]
+                }
+            )
+        except:
+            pass
 
     return item_list_parsed
 

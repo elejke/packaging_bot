@@ -3,6 +3,8 @@
 from django.apps import AppConfig
 from django.apps import apps
 from django.conf import settings
+
+import json
 import importlib
 import telegram
 from django.utils.module_loading import module_has_submodule
@@ -209,7 +211,7 @@ class DjangoTelegramBot(AppConfig):
 
             else:
                 try:
-                    updater = Updater(token=token)
+                    updater = Updater(token=token, request_kwargs=json.load(open("/app/proxy.json")))
                     bot = updater.bot
                     bot.delete_webhook()
                     DjangoTelegramBot.updaters.append(updater)
