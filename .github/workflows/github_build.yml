@@ -15,5 +15,5 @@ jobs:
     - run: |
         docker buildx build . \
           --platform linux/arm/v7 \
-          --tag elejke/packaging_bot_client:latest \
+          --tag elejke/packaging_bot_client:latest-arm \
           --push
